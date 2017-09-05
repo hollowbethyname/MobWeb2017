@@ -43,7 +43,7 @@ Submission info: TBD
 
 ## Lecture outlines (useful to prepare for midterm test)
 
-* 5 September: SLIDE (soon)
+* 5 September: [SLIDE](/slides/MobWeb_01.pdf)
    * Requirements, course info.
    * iOS vs. Android comparison, pros, cons.
    * Platform structure.
