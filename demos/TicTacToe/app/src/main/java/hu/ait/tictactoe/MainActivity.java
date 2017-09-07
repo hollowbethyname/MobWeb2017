@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.facebook.shimmer.ShimmerFrameLayout;
+
 import hu.ait.tictactoe.view.TicTacToeView;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
                 gameView.resetGame();
             }
         });
+
+        ShimmerFrameLayout shimmerFrameLayout =
+                (ShimmerFrameLayout) findViewById(R.id.shimmer_view_container);
+        shimmerFrameLayout.startShimmerAnimation();
     }
 
     public void setMessage(String text) {
