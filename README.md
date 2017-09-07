@@ -29,17 +29,18 @@ Calculated with 10-10-20-20-40 weights above.
 ## Android assignments
 
 1. Minesweeper: SPECIFICATION (soon)
-   * Deadline: TBD
+   * Deadline: September 20th 23:59
 2. TBD
 3. TBD
 4. Large assignment
    * A preliminary specification will be needed (functions, screen design)
 
-Submission info: TBD
+Submission info: (soon)
 
 ## Demos
 
-* TBD
+* [HelloWorld](/demos/HelloWorld/)
+* [TicTacToe](/demos/TicTacToe/) (check commits for some incremental solutions)
 
 ## Lecture outlines (useful to prepare for midterm test)
 
@@ -49,13 +50,22 @@ Submission info: TBD
    * Platform structure.
    * Android development tools.
    * Topic of the first assignment: Minesweeper.
-* 7 September
+* 7 September: [SLIDE](/slides/MobWeb_02.pdf)
+   * Android Studio project structure.
+   * HelloWorld demo, emulator, Instant run option.
+   * Manifest, build.gradle, apk build.
+   * TicTacToe demo, custom view, R file, references, Model-View-Controller architecture, etc.
+   * (Activity, Layout etc. will discussed later with more details, slides).
 * 12 September
+* 14 September: No lesson.
 * 19 September
 * 21 September
 * 26 September
+* 28 September: No lesson.
 * 3 October
+* 5 October: No lesson.
 * 10 October
 * 12 October
+* 19 October: No lesson.
 * 17 October
 * 19 October
