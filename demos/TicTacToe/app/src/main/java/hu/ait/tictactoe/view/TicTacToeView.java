@@ -14,6 +14,7 @@ import hu.ait.tictactoe.model.TicTacToeModel;
 
 public class TicTacToeView extends View {
 
+    private Paint paintText;
     private Paint paintBg;
     private Paint paintLine;
     private boolean mode;
@@ -29,6 +30,9 @@ public class TicTacToeView extends View {
         paintLine.setColor(Color.WHITE);
         paintLine.setStyle(Paint.Style.STROKE);
         paintLine.setStrokeWidth(5);
+
+        paintText = new Paint();
+        paintText.setColor(Color.RED);
     }
 
     @Override
@@ -37,9 +41,19 @@ public class TicTacToeView extends View {
 
         canvas.drawRect(0, 0, getWidth(), getHeight(),
                 paintBg);
-        drawGameGrid(canvas);
 
+        drawGameGrid(canvas);
         drawPlayers(canvas);
+
+        // Z-order is important!
+        canvas.drawText("3", 0, getHeight()/3, paintText);
+        canvas.drawText("1", getWidth() *2 / 3, getHeight() * 3 /3, paintText);
+    }
+
+    @Override
+    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
+        super.onSizeChanged(w, h, oldw, oldh);
+        paintText.setTextSize(getHeight()/3);
     }
 
     private void drawPlayers(Canvas canvas) {
