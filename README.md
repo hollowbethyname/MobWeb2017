@@ -28,14 +28,14 @@ Calculated with 10-10-20-20-40 weights above.
 
 ## Android assignments
 
-1. Minesweeper: SPECIFICATION (soon)
+1. Minesweeper: [SPECIFICATION](/assignments/01_Android_Assignment.pdf)
    * Deadline: September 20th 23:59
 2. TBD
 3. TBD
 4. Large assignment
    * A preliminary specification will be needed (functions, screen design)
 
-Submission info: (soon)
+Submission info: available in the specifications.
 
 ## Demos
 
