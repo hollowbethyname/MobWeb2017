@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
 import com.facebook.shimmer.ShimmerFrameLayout;
 
@@ -15,6 +16,7 @@ import hu.ait.tictactoe.view.TicTacToeView;
 public class MainActivity extends AppCompatActivity {
 
     private TextView tvData;
+    private ToggleButton toggleButton;
     private LinearLayout linearLayout;
 
     @Override
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         final TicTacToeView gameView = (TicTacToeView) findViewById(R.id.gameView);
         Button btnClear = (Button) findViewById(R.id.btnClear);
         linearLayout = (LinearLayout) findViewById(R.id.activity_main);
+        toggleButton = (ToggleButton) findViewById(R.id.toggleButton);
 
         btnClear.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         ShimmerFrameLayout shimmerFrameLayout =
                 (ShimmerFrameLayout) findViewById(R.id.shimmer_view_container);
         shimmerFrameLayout.startShimmerAnimation();
+
     }
 
     public void setMessage(String text) {

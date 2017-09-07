@@ -34,5 +34,13 @@
             android:text="Touch the game area to play"/>
     </com.facebook.shimmer.ShimmerFrameLayout>
 
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="Place a flag!"
+        android:textOn="Try a field!"/>
+
+
 
 </LinearLayout>
