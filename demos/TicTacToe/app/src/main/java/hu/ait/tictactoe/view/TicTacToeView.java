@@ -16,6 +16,7 @@ public class TicTacToeView extends View {
 
     private Paint paintBg;
     private Paint paintLine;
+    private boolean mode;
 
     public TicTacToeView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -121,5 +122,12 @@ public class TicTacToeView extends View {
     public void resetGame() {
         TicTacToeModel.getInstance().resetModel();
         invalidate();
+    }
+
+    public void setMode(boolean mode) {
+        this.mode = mode;
+        ((MainActivity)getContext()).setMessage(
+                "Mode is: " + mode
+        );
     }
 }

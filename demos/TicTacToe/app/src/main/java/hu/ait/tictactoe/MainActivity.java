@@ -5,6 +5,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.ToggleButton;
@@ -40,6 +41,13 @@ public class MainActivity extends AppCompatActivity {
         ShimmerFrameLayout shimmerFrameLayout =
                 (ShimmerFrameLayout) findViewById(R.id.shimmer_view_container);
         shimmerFrameLayout.startShimmerAnimation();
+
+        toggleButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                gameView.setMode(isChecked);
+            }
+        });
 
     }
 
