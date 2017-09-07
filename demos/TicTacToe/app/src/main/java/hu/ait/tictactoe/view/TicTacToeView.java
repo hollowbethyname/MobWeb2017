@@ -9,6 +9,7 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
+import hu.ait.tictactoe.MainActivity;
 import hu.ait.tictactoe.model.TicTacToeModel;
 
 public class TicTacToeView extends View {
@@ -95,6 +96,14 @@ public class TicTacToeView extends View {
 
                 invalidate();
             }
+            String next = "O";
+            if (TicTacToeModel.getInstance().getNextPlayer() == TicTacToeModel.CROSS) {
+                next = "X";
+            }
+
+            ((MainActivity)getContext()).setMessage(
+                    "Next is: " + next
+            );
         }
 
         return true;
